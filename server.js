@@ -153,6 +153,10 @@ app.post('/api/checkout', (req, res) => {
   res.json({ success: true, ...summary });
 });
 
-app.listen(PORT, () => {
-  console.log(`Kigali ShopEasy API running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Kigali ShopEasy API running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
