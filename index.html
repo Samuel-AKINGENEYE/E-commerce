@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kigali ShopEasy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="header">
+      <div class="topbar">
+        <p>Kigali ShopEasy | Free delivery on orders over RWF 20,000</p>
+        <div class="top-links">
+          <a href="#support">Support</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="nav-container">
+        <a class="brand" href="#home">Kigali ShopEasy</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links">
+          <a href="#collections">Collections</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="cart-button" aria-label="Open cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-text">Cart</span>
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Rwanda's premium online store</p>
+          <h1>Shop shoes, clothes, and watches with fast delivery across Kigali.</h1>
+          <p>Discover local and imported fashion, trending sneakers, and elegant timepieces priced in Rwandan francs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop now</a>
+            <a class="btn btn-outline" href="#collections">Browse categories</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card hero-card-large">
+            <img src="https://images.unsplash.com/photo-1536148935331-7c96b88af45f?auto=format&fit=crop&w=900&q=80" alt="Elegant watch display" />
+            <div class="hero-card-copy">
+              <span>Watches</span>
+              <h2>Stylish timepieces for every occasion</h2>
+            </div>
+          </div>
+          <div class="hero-card-grid">
+            <div class="hero-card small">
+              <img src="https://images.unsplash.com/photo-1519741498284-170f5452d0d1?auto=format&fit=crop&w=800&q=80" alt="Sneakers gallery" />
+              <div class="hero-card-copy"><span>Shoes</span></div>
+            </div>
+            <div class="hero-card small">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion outfit" />
+              <div class="hero-card-copy"><span>Clothes</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2>Top collections for shoes, apparel and watches.</h2>
+          </div>
+        </div>
+        <div class="collections-grid">
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1519741498284-170f5452d0d1?auto=format&fit=crop&w=900&q=80" alt="Sneakers collection" />
+            <div class="collection-copy">
+              <span>Elevated Streetwear</span>
+              <h3>Men's & women’s shoes</h3>
+            </div>
+          </article>
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Clothing collection" />
+            <div class="collection-copy">
+              <span>Seasonal fashion</span>
+              <h3>Casual and formal wear</h3>
+            </div>
+          </article>
+          <article class="collection-card">
+            <img src="https://images.unsplash.com/photo-1513708928675-8c418386bb99?auto=format&fit=crop&w=900&q=80" alt="Watch collection" />
+            <div class="collection-copy">
+              <span>Luxury & sport</span>
+              <h3>Watches under RWF 200,000</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured products</p>
+            <h2>Curated favorites with local Rwanda pricing.</h2>
+          </div>
+          <div class="product-actions">
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="shoes">Shoes</button>
+              <button class="filter-btn" data-filter="clothes">Clothes</button>
+              <button class="filter-btn" data-filter="watches">Watches</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">Local convenience</p>
+          <h2>One-stop Rwandan shop for fashion and accessories.</h2>
+          <p>Kigali ShopEasy brings local delivery, easy returns, and secure payment for customers across Rwanda.</p>
+        </div>
+        <div class="about-stats">
+          <div>
+            <strong>50+</strong>
+            <span>Products available</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Customer support</span>
+          </div>
+          <div>
+            <strong>RWF 20,000</strong>
+            <span>Free delivery threshold</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="newsletter-copy">
+          <p class="eyebrow">Stay updated</p>
+          <h2>Get the latest arrivals and exclusive Rwanda offers.</h2>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <div class="cart-backdrop hidden"></div>
+    <aside class="cart-drawer hidden" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Your cart</p>
+          <h2>Bag</h2>
+        </div>
+        <button class="close-cart" aria-label="Close cart">✕</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">Your cart is empty.</div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <strong class="cart-total">RWF 0</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <h3>Kigali ShopEasy</h3>
+      <p>Shop shoes, clothes and watches with delivery across Rwanda.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#support">Support</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
